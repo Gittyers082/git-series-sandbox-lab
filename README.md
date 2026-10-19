@@ -21,4 +21,3 @@ Just open `index.html` in a browser after cloning.
 
 See the companion **Student Hands-On Challenge Guide** for the 5 workshop challenges.
 
-<!-- CI trigger test -->

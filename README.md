@@ -20,3 +20,5 @@ Just open `index.html` in a browser after cloning.
 | Push your branch | `git push origin feat/my-task` |
 
 See the companion **Student Hands-On Challenge Guide** for the 5 workshop challenges.
+
+<!-- CI trigger test -->

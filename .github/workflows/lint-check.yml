@@ -1,0 +1,31 @@
+name: validate-contributions
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Check for unresolved merge conflict markers
+        run: |
+          if grep -R -n -E "^(<{7}|={7}|>{7})" --include="*.*" . ; then
+            echo "::error::Unresolved merge conflict markers found."
+            exit 1
+          fi
+          echo "No conflict markers found."
+
+      - name: Validate JSON syntax in /profiles
+        run: |
+          status=0
+          for f in profiles/*.json; do
+            if ! python3 -m json.tool "$f" > /dev/null; then
+              echo "::error file=$f::Invalid JSON"
+              status=1
+            fi
+          done
+          exit $status

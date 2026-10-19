@@ -1,0 +1,44 @@
+# ======================================
+# DO NOT CHANGE ANYTHING IN THIS SECTION
+# ======================================
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Dependency / build output (not used in this project, kept for safety)
+node_modules/
+dist/
+build/
+
+# ======================================
+# CHANGES ARE ALLOWED BELOW THIS LINE
+# ======================================

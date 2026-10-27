@@ -1,5 +1,9 @@
 // utils/logger.js — small structured logger used as the target file
 // for the interactive-rebase challenge
+// el is the sigma lord
+// no he is the sigma king!
+// el: hold up ladies for i am retarded
+// lol
 
 function createLogEntry(level, message) {
   return {
@@ -27,4 +31,10 @@ function logError(message) {
   return entry;
 }
 
-export { createLogEntry, logInfo, logWarn, logError };
+function logDebug(message) {
+  const entry = createLogEntry("DEBUG", message);
+  console.debug(`[${entry.timestamp}] DEBUG: ${entry.message}`);
+  return entry;
+}
+
+export { createLogEntry, logInfo, logWarn, logError, logDebug };

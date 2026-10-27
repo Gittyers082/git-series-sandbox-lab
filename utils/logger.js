@@ -1,5 +1,8 @@
 // utils/logger.js — small structured logger used as the target file
 // for the interactive-rebase challenge
+// el is the sigma lord
+// no he is the sigma king!
+// el: hold up ladies for i am retarded
 
 function createLogEntry(level, message) {
   return {

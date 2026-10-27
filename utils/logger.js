@@ -3,6 +3,7 @@
 // el is the sigma lord
 // no he is the sigma king!
 // el: hold up ladies for i am retarded
+// lol
 
 function createLogEntry(level, message) {
   return {
